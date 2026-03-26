@@ -90,13 +90,14 @@ export const getClientById = async (id: string): Promise<Client | undefined> => 
   return clients.find(c => c.id === id);
 };
 
-export const createClient = async (clientData: Omit<Client, 'id' | 'lastUpdated' | 'createdAt'>): Promise<Client> => {
+export const createClient = async (clientData: Omit<Client, 'id' | 'lastUpdated' | 'createdAt' | 'lastActivity'>): Promise<Client> => {
   await new Promise(resolve => setTimeout(resolve, 1000));
   const newClient: Client = {
     ...clientData,
     id: (clients.length + 1).toString(),
     lastUpdated: 'Just now',
     createdAt: new Date().toISOString().split('T')[0],
+    lastActivity: 'Just now',
   };
   clients = [newClient, ...clients];
   return newClient;

@@ -45,7 +45,7 @@ const ClientAI: React.FC<ClientAIProps> = ({ clientData }) => {
       const nextDeadline = clientData.deadlines[0];
       aiResponse = `The next compliance deadline is ${nextDeadline.title} on ${nextDeadline.date}. This is marked as ${nextDeadline.urgent ? 'URGENT' : 'normal priority'}.`;
     } else if (userMessage.toLowerCase().includes('pan') || userMessage.toLowerCase().includes('gst')) {
-      aiResponse = `The PAN for ${clientData.client.name} is ${clientData.client.pan}${clientData.client.gst ? ` and the GST number is ${clientData.client.gst}` : ''}.`;
+      aiResponse = `The PAN for ${clientData.client.name} is ${clientData.client.pan}${clientData.client.gstin ? ` and the GST number is ${clientData.client.gstin}` : ''}.`;
     } else {
       aiResponse = `I've reviewed the records for ${clientData.client.name}. They are currently ${clientData.client.status} with a focus on ${clientData.client.type} operations. What specific information do you need?`;
     }

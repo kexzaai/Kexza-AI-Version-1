@@ -8,7 +8,7 @@ import { Client } from '@/services/clientService';
 interface AddClientModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onAdd: (client: Omit<Client, 'id' | 'lastUpdated' | 'createdAt'>) => void;
+  onAdd: (client: Omit<Client, 'id' | 'lastUpdated' | 'createdAt' | 'lastActivity'>) => void;
 }
 
 const AddClientModal = ({ isOpen, onClose, onAdd }: AddClientModalProps) => {

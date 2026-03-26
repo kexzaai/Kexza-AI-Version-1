@@ -16,19 +16,19 @@ const ProblemSolution = () => {
   ];
 
   return (
-    <section className="section bg-white/50">
+    <section className="section py-24">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16">
           {/* Problem Section */}
           <div id="problem">
-            <h2 className="mb-8 text-red-600/80">The Real Struggles of CA Firms</h2>
+            <h2 className="mb-8 text-white/90">The Real Struggles of CA Firms</h2>
             <div className="flex flex-col gap-6">
               {problems.map((p, i) => (
-                <GlassCard key={i} className="flex gap-4 p-6 border-transparent bg-red-50/30">
+                <GlassCard key={i} className="flex gap-4 p-6 border-white/10 bg-white/5 backdrop-blur-sm">
                   <div className="mt-1">{p.icon}</div>
                   <div>
-                    <h4 className="font-bold text-lg mb-1">{p.title}</h4>
-                    <p className="text-sm">{p.desc}</p>
+                    <h4 className="font-bold text-lg mb-1 text-white">{p.title}</h4>
+                    <p className="text-white/60 text-sm">{p.desc}</p>
                   </div>
                 </GlassCard>
               ))}
@@ -37,14 +37,14 @@ const ProblemSolution = () => {
 
           {/* Solution Section */}
           <div id="solution">
-            <h2 className="mb-8 text-[var(--accent)]">The Kexza AI Advantage</h2>
+            <h2 className="mb-8 text-white/90">The Kexza AI Advantage</h2>
             <div className="flex flex-col gap-6">
               {solutions.map((s, i) => (
-                <GlassCard key={i} className="flex gap-4 p-6 border-transparent bg-blue-50/30">
+                <GlassCard key={i} className="flex gap-4 p-6 border-white/10 bg-white/5 backdrop-blur-sm">
                   <div className="mt-1">{s.icon}</div>
                   <div>
-                    <h4 className="font-bold text-lg mb-1">{s.title}</h4>
-                    <p className="text-sm">{s.desc}</p>
+                    <h4 className="font-bold text-lg mb-1 text-white">{s.title}</h4>
+                    <p className="text-white/60 text-sm">{s.desc}</p>
                   </div>
                 </GlassCard>
               ))}

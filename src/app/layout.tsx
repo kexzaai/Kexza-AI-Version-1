@@ -15,10 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light">
-      <body className="min-h-screen relative font-sans">
+      <body className="min-h-screen relative font-sans overflow-x-hidden">
         <LiquidBackground />
         {children}
-        <BottomNav />
       </body>
     </html>
   );

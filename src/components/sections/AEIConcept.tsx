@@ -4,7 +4,7 @@ import { Cpu, Zap, Radio } from 'lucide-react';
 
 const AEIConcept = () => {
   return (
-    <section className="section bg-[var(--accent)] text-white overflow-hidden relative">
+    <section className="section bg-white/5 backdrop-blur-3xl border-y border-white/10 text-white overflow-hidden relative">
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold mb-6">

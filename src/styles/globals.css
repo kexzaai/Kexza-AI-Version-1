@@ -5,22 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --background: #020205;
+  --background: #000000;
   --foreground: #ffffff;
-  --accent: #cc00ff;
-  --accent-soft: rgba(204, 0, 255, 0.1);
-  --glass-bg: rgba(255, 255, 255, 0.03);
+  --accent: #ffffff;
+  --accent-soft: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.8);
-  --radius-xl: 32px;
-  --radius-2xl: 48px;
+  --radius-xl: 40px;
+  --radius-2xl: 60px;
 }
 
 [data-theme='light'] {
-  --background: #ffffff;
-  --foreground: #000000;
-  --glass-bg: rgba(0, 0, 0, 0.05);
-  --glass-border: rgba(0, 0, 0, 0.1);
+  --background: #000000;
+  --foreground: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 

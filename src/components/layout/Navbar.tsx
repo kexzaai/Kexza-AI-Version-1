@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
-      <nav className={`liquid-glass mx-auto max-w-7xl transition-all duration-500 ${isScrolled ? 'py-3 px-6' : 'py-4 px-8'} ${isMobileMenuOpen ? 'rounded-b-none' : ''}`}>
+      <nav className={`liquid-glass mx-auto max-w-4xl transition-all duration-500 ${isScrolled ? 'py-3 px-6' : 'py-4 px-8'} ${isMobileMenuOpen ? 'rounded-b-none' : ''}`}>
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 tap-active">
             <Image 

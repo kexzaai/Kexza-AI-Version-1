@@ -18,6 +18,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      borderRadius: {
+        'xl': '24px',
+        '2xl': '32px',
+        '3xl': '40px',
+      },
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      }
     },
   },
   plugins: [],

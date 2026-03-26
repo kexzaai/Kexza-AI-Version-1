@@ -1,19 +1,25 @@
-import type { Metadata } from "next";
-import "@/styles/globals.css";
+import type { Metadata } from 'next';
+import '@/styles/globals.css';
+import LiquidBackground from '@/components/layout/Background';
+import BottomNav from '@/components/layout/BottomNav';
 
 export const metadata: Metadata = {
-  title: "Kexza AI | Execution Intelligence for CA Firms",
-  description: "Scale your CA firm with Artificial Execution Intelligence. Manage workflows, tracking, and client communication seamlessly.",
+  title: 'Kexza AI | Premium CA SaaS',
+  description: 'iOS 26 Liquid Glass empowered SaaS for Chartered Accountants',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" data-theme="light">
+      <body className="min-h-screen relative font-sans">
+        <LiquidBackground />
+        {children}
+        <BottomNav />
+      </body>
     </html>
   );
 }
